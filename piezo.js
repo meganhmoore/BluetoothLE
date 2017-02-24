@@ -18,13 +18,7 @@ var SwitchCharacteristic = function () {
   SwitchCharacteristic.super_.call(this, {
     uuid: '5FA1',
     properties: ['read', 'write'],
-    descriptors: [
-      new bleno.Descriptor({
-        uuid: '2901',
-        value: 'Switch'
-      })
-    ]
-  });
+    descriptors: [new bleno.Descriptor({uuid: '2901', value: 'Switch'})]});
 };
 util.inherits(SwitchCharacteristic, Characteristic);
 

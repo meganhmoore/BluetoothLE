@@ -16,7 +16,7 @@ var printStatus = function () {
 
 var SwitchCharacteristic = function () {
   SwitchCharacteristic.super_.call(this, {
-    uuid: '5FA1',
+    uuid: 'FF11',
     properties: ['read', 'write'],
     descriptors: [new bleno.Descriptor({uuid: '2901', value: 'Switch'})]});
 };
@@ -47,7 +47,7 @@ SwitchCharacteristic.prototype.onWriteRequest = function (data, offset, withoutR
 
 var RangeCharacteristic = function () {
   RangeCharacteristic.super_.call(this, {
-    uuid: 'ff11',
+    uuid: '5FA1',
     properties: ['read', 'write'],
     descriptors: [
       new bleno.Descriptor({

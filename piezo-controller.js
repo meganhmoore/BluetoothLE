@@ -2,7 +2,7 @@ var noble = require('noble');
 
 noble.on('stateChange', function (state) {
   if (state === 'poweredOn') {
-    noble.startScanning(['ff10']);
+    noble.startScanning(['5FA0']);
   } else {
     noble.stopScanning();
   }
@@ -22,7 +22,7 @@ function connectAndSetUp(peripheral) {
 
   peripheral.connect(function (error) {
 
-    var serviceUUIDs = ['ff10'];
+    var serviceUUIDs = ['5FA0'];
     var characteristicUUIDs = ['ff11']; // switchCharacteristic
 
     peripheral.discoverSomeServicesAndCharacteristics(serviceUUIDs, characteristicUUIDs, onServicesAndCharacteristicsDiscovered);

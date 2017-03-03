@@ -10,7 +10,7 @@ noble.on('stateChange', function (state) {
 
 noble.on('discover', function (peripheral) {
   console.log(peripheral);
-  if (peripheral.advertisement.localName === 'MegansPiezo') { // Arduino 101
+  if (peripheral.advertisement.localName === 'MeganPiezo') { // Arduino 101
   //if (peripheral.address === 'b8:27:eb:7d:38:e0') { // Raspberry Pi
     connectAndSetUp(peripheral);
     noble.stopScanning();

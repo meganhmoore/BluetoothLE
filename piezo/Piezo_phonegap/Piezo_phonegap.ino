@@ -5,7 +5,7 @@
 BLEPeripheral blePeripheral;
 
 // create service
-BLEService piezoService = BLEService("5FAO");
+BLEService piezoService = BLEService("5FA0");
 
 // create piezo characteristic
 BLEUnsignedCharCharacteristic loudnessCharacteristic = BLEUnsignedCharCharacteristic("5FA1", BLERead | BLEWrite);
